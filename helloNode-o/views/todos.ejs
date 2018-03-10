@@ -1,0 +1,31 @@
+<header id="header">
+     <h1>MyTodos</h1>
+     <input id="new-todo" name="todoinput" type="text" class="form-control" placeholder="待办事项" />
+</header>
+<% if (locals.todolist) { %>
+    <section id="main">
+        <input type="checkbox" id="toggle-all" name="toggle">
+        <input type="hidden" id="listValue" value="<%= todolist %>">
+        <ul id='todo-list'></ul>
+        <footer id="footer">
+            <span id="todo-count">
+                总计<strong><%= JSON.parse(todolist).length %></strong>项
+            </span>
+            <ul id="filters">
+                <li>
+                    <a href="javascript:;" name="2">All</a>
+                </li>
+                <li>
+                    <a href="javascript:;" name="0">Active</a>
+                </li>
+                <li>
+                    <a href="javascript:;" name="1">Completed</a>
+                </li>
+            </ul>
+            <button id="clear-completed">清除完成事项(<%= JSON.parse(todolist).filter(function (element, index, array) {
+                return element.state == 1; }).length %>)
+            </button>
+        </footer>
+    </section>
+ <% } %>
+

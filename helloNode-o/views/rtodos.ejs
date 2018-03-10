@@ -1,0 +1,45 @@
+<script type='template/regular' id='todo'>
+    <li  r-class={ { 'completed' : todo.completed==1?true:false, 'editing' : todo.editing } }>
+        <div class="view">
+            <input class="toggle" type="checkbox" on-click={ this.changeStete(todo) } r-model={ todo.completed }>
+            <label on-dblclick={todo.editing = true}>{ todo.description }</label>
+            <button on-click="remove" class="destroy"></button>
+        </div>
+        <input id="edit" class="edit" on-enter={ this.editTodoDes(todo) } r-model={todo.description} autofocus>
+    </li>
+</script>
+<script type='template/regular' id='todomvc'>
+    <div>
+        <h1>RegularTodos</h1>
+        <input id="new-todo" on-enter={ this.newTodo(editTodo) } placeholder="待办事项" r-model={ editTodo }>
+    </div>
+    {#if !!todos.length}
+    <section id="main">
+        <input id="toggle-all" type="checkbox" name='toggle' r-model='allCompleted' on-click={ this.updateAll(allCompleted) }>
+        <label for="toggle-all">Mark all as complete</label>
+        <ul id="todo-list">
+            {#list this.getList(filter) as todo}
+            <todo todo={todo} on-remove={this.deleteTodo(todo,todo_index)} ></todo>
+            {/list}
+        </ul>
+    </section>
+    <footer id="footer">
+        <span id="todo-count"> 总计<strong>{this.getList(filter).length}</strong>项</span>
+        <ul id="filters">
+            <li>
+                <a class="{ filter === 'all'? 'selected' : '' }"  href="javascript:;" on-click={filter='all'}>All</a>
+            </li>
+            <li>
+                <a class="{ filter === 'active'? 'selected' : '' }" href='javascript:;' on-click={filter = 'active'}>Active</a>
+            </li>
+            <li>
+                <a class="{ filter === 'completed'? 'selected' : '' }" href="javascript:;" on-click={filter = 'completed'}>Completed</a>
+            </li>
+        </ul>
+        {#if completedLength}
+        <button id="clear-completed" on-click={this.clearCompleted()} >Clear completed ({completedLength })</button>
+        {/if}
+    </footer>
+    {/if}
+</script>
+<!--<script src="/javascripts/rindex.js"></script>-->

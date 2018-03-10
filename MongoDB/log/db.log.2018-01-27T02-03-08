@@ -1,0 +1,245 @@
+2018-01-26T19:08:53.248+0800 I CONTROL  [main] Trying to start Windows service 'MongoDB'
+2018-01-26T19:08:53.249+0800 I CONTROL  [initandlisten] MongoDB starting : pid=10120 port=27017 dbpath=F:\NetEase\MongoDB\db 64-bit host=Dell-PC
+2018-01-26T19:08:53.249+0800 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2018-01-26T19:08:53.249+0800 I CONTROL  [initandlisten] db version v3.4.11-rc0-2-g87ad912
+2018-01-26T19:08:53.249+0800 I CONTROL  [initandlisten] git version: 87ad912b6b3a1b3776d8c39bc44321bed130e924
+2018-01-26T19:08:53.249+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1u-fips  22 Sep 2016
+2018-01-26T19:08:53.249+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2018-01-26T19:08:53.250+0800 I CONTROL  [initandlisten] modules: none
+2018-01-26T19:08:53.250+0800 I CONTROL  [initandlisten] build environment:
+2018-01-26T19:08:53.250+0800 I CONTROL  [initandlisten]     distmod: 2008plus-ssl
+2018-01-26T19:08:53.250+0800 I CONTROL  [initandlisten]     distarch: x86_64
+2018-01-26T19:08:53.250+0800 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-01-26T19:08:53.250+0800 I CONTROL  [initandlisten] options: { config: "C:\Program Files\MongoDB\Server\3.4\bin\mongo.config", service: true, storage: { dbPath: "F:\NetEase\MongoDB\db" }, systemLog: { destination: "file", path: "F:\NetEase\MongoDB\log\db.log" } }
+2018-01-26T19:08:53.252+0800 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3536M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),verbose=(recovery_progress),
+2018-01-26T19:08:53.756+0800 I CONTROL  [initandlisten] 
+2018-01-26T19:08:53.756+0800 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-01-26T19:08:53.756+0800 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-01-26T19:08:53.756+0800 I CONTROL  [initandlisten] 
+2018-01-26T19:08:54.228+0800 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'F:/NetEase/MongoDB/db/diagnostic.data'
+2018-01-26T19:08:54.466+0800 I INDEX    [initandlisten] build index on: admin.system.version properties: { v: 2, key: { version: 1 }, name: "incompatible_with_version_32", ns: "admin.system.version" }
+2018-01-26T19:08:54.466+0800 I INDEX    [initandlisten] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2018-01-26T19:08:54.480+0800 I INDEX    [initandlisten] build index done.  scanned 0 total records. 0 secs
+2018-01-26T19:08:54.483+0800 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 3.4
+2018-01-26T19:08:54.484+0800 I STORAGE  [initandlisten] Service running
+2018-01-26T19:08:54.485+0800 I NETWORK  [thread1] waiting for connections on port 27017
+2018-01-26T19:09:27.773+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:50320 #1 (1 connection now open)
+2018-01-26T19:09:27.774+0800 I NETWORK  [conn1] received client metadata from 127.0.0.1:50320 conn1: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.11-rc0-2-g87ad912" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2018-01-26T19:13:29.668+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:50402 #2 (2 connections now open)
+2018-01-26T19:13:29.679+0800 I NETWORK  [conn2] received client metadata from 127.0.0.1:50402 conn2: { application: { name: "Robomongo" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2018-01-26T19:13:29.708+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:50403 #3 (3 connections now open)
+2018-01-26T19:13:29.718+0800 I NETWORK  [conn3] received client metadata from 127.0.0.1:50403 conn3: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2018-01-26T19:13:31.397+0800 I -        [conn2] end connection 127.0.0.1:50402 (3 connections now open)
+2018-01-26T19:13:31.399+0800 I -        [conn3] end connection 127.0.0.1:50403 (2 connections now open)
+2018-01-26T19:13:56.196+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:50406 #4 (2 connections now open)
+2018-01-26T19:13:56.197+0800 I NETWORK  [conn4] received client metadata from 127.0.0.1:50406 conn4: { application: { name: "Robomongo" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2018-01-26T19:13:56.235+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:50407 #5 (3 connections now open)
+2018-01-26T19:13:56.245+0800 I NETWORK  [conn5] received client metadata from 127.0.0.1:50407 conn5: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2018-01-26T19:14:23.068+0800 I COMMAND  [conn4] insert netease.temp appName: "Robomongo" ninserted:1 keysInserted:1 numYields:0 locks:{ Global: { acquireCount: { r: 3, w: 3 } }, Database: { acquireCount: { w: 2, W: 1 } }, Collection: { acquireCount: { w: 2 } } } 152ms
+2018-01-26T19:14:23.069+0800 I COMMAND  [conn4] CMD: drop netease.temp
+2018-01-26T19:15:05.868+0800 I COMMAND  [conn4] command netease.users appName: "Robomongo" command: create { create: "users" } numYields:0 reslen:22 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { W: 1 } } } protocol:op_command 128ms
+2018-01-26T19:15:09.305+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:50427 #6 (4 connections now open)
+2018-01-26T19:15:09.316+0800 I NETWORK  [conn6] received client metadata from 127.0.0.1:50427 conn6: { application: { name: "Robomongo" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2018-01-26T19:15:09.347+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:50428 #7 (5 connections now open)
+2018-01-26T19:15:09.357+0800 I NETWORK  [conn7] received client metadata from 127.0.0.1:50428 conn7: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2018-01-26T19:15:24.171+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:50429 #8 (6 connections now open)
+2018-01-26T19:15:24.171+0800 I NETWORK  [conn8] received client metadata from 127.0.0.1:50429 conn8: { application: { name: "Robomongo" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2018-01-26T19:15:24.216+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:50430 #9 (7 connections now open)
+2018-01-26T19:15:24.226+0800 I NETWORK  [conn9] received client metadata from 127.0.0.1:50430 conn9: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2018-01-26T19:15:25.738+0800 I -        [conn6] end connection 127.0.0.1:50427 (7 connections now open)
+2018-01-26T19:15:25.739+0800 I -        [conn7] end connection 127.0.0.1:50428 (6 connections now open)
+2018-01-26T19:27:52.869+0800 I -        [conn1] end connection 127.0.0.1:50320 (5 connections now open)
+2018-01-26T20:02:15.091+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52126 #10 (5 connections now open)
+2018-01-26T20:02:15.092+0800 I NETWORK  [conn10] received client metadata from 127.0.0.1:52126 conn10: { application: { name: "Robomongo" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2018-01-26T20:02:15.130+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52127 #11 (6 connections now open)
+2018-01-26T20:02:15.130+0800 I NETWORK  [conn11] received client metadata from 127.0.0.1:52127 conn11: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2018-01-26T20:02:25.342+0800 I COMMAND  [conn4] CMD: drop netease.users
+2018-01-26T20:02:49.675+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52138 #12 (7 connections now open)
+2018-01-26T20:02:49.685+0800 I NETWORK  [conn12] received client metadata from 127.0.0.1:52138 conn12: { application: { name: "Robomongo" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2018-01-26T20:02:49.730+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52139 #13 (8 connections now open)
+2018-01-26T20:02:49.740+0800 I NETWORK  [conn13] received client metadata from 127.0.0.1:52139 conn13: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2018-01-26T20:02:54.227+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52142 #14 (9 connections now open)
+2018-01-26T20:02:54.236+0800 I NETWORK  [conn14] received client metadata from 127.0.0.1:52142 conn14: { application: { name: "Robomongo" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2018-01-26T20:02:54.277+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52143 #15 (10 connections now open)
+2018-01-26T20:02:54.277+0800 I NETWORK  [conn15] received client metadata from 127.0.0.1:52143 conn15: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2018-01-26T20:03:06.299+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52146 #16 (11 connections now open)
+2018-01-26T20:03:06.308+0800 I NETWORK  [conn16] received client metadata from 127.0.0.1:52146 conn16: { application: { name: "Robomongo" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2018-01-26T20:03:06.345+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52147 #17 (12 connections now open)
+2018-01-26T20:03:06.355+0800 I NETWORK  [conn17] received client metadata from 127.0.0.1:52147 conn17: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2018-01-26T20:03:14.763+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52150 #18 (13 connections now open)
+2018-01-26T20:03:14.764+0800 I NETWORK  [conn18] received client metadata from 127.0.0.1:52150 conn18: { application: { name: "Robomongo" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2018-01-26T20:03:14.804+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52151 #19 (14 connections now open)
+2018-01-26T20:03:14.805+0800 I NETWORK  [conn19] received client metadata from 127.0.0.1:52151 conn19: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2018-01-26T20:03:19.723+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52153 #20 (15 connections now open)
+2018-01-26T20:03:19.724+0800 I NETWORK  [conn20] received client metadata from 127.0.0.1:52153 conn20: { application: { name: "Robomongo" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2018-01-26T20:03:19.770+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52154 #21 (16 connections now open)
+2018-01-26T20:03:19.770+0800 I NETWORK  [conn21] received client metadata from 127.0.0.1:52154 conn21: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2018-01-26T20:03:27.321+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52155 #22 (17 connections now open)
+2018-01-26T20:03:27.322+0800 I NETWORK  [conn22] received client metadata from 127.0.0.1:52155 conn22: { application: { name: "Robomongo" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2018-01-26T20:03:27.367+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52156 #23 (18 connections now open)
+2018-01-26T20:03:27.377+0800 I NETWORK  [conn23] received client metadata from 127.0.0.1:52156 conn23: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2018-01-26T20:03:34.649+0800 I -        [conn22] end connection 127.0.0.1:52155 (18 connections now open)
+2018-01-26T20:03:34.650+0800 I -        [conn23] end connection 127.0.0.1:52156 (17 connections now open)
+2018-01-26T20:03:42.842+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52167 #24 (17 connections now open)
+2018-01-26T20:03:42.843+0800 I NETWORK  [conn24] received client metadata from 127.0.0.1:52167 conn24: { application: { name: "Robomongo" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2018-01-26T20:03:42.882+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52168 #25 (18 connections now open)
+2018-01-26T20:03:42.892+0800 I NETWORK  [conn25] received client metadata from 127.0.0.1:52168 conn25: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2018-01-26T20:03:50.953+0800 I -        [conn4] end connection 127.0.0.1:50406 (18 connections now open)
+2018-01-26T20:03:50.954+0800 I -        [conn5] end connection 127.0.0.1:50407 (17 connections now open)
+2018-01-26T20:03:56.775+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52172 #26 (17 connections now open)
+2018-01-26T20:03:56.775+0800 I NETWORK  [conn26] received client metadata from 127.0.0.1:52172 conn26: { application: { name: "Robomongo" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2018-01-26T20:03:56.812+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52173 #27 (18 connections now open)
+2018-01-26T20:03:56.822+0800 I NETWORK  [conn27] received client metadata from 127.0.0.1:52173 conn27: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2018-01-26T20:04:20.822+0800 I COMMAND  [conn26] insert nestease.temp appName: "Robomongo" ninserted:1 keysInserted:1 numYields:0 locks:{ Global: { acquireCount: { r: 3, w: 3 } }, Database: { acquireCount: { w: 2, W: 1 } }, Collection: { acquireCount: { w: 2 } } } 132ms
+2018-01-26T20:04:20.823+0800 I COMMAND  [conn26] CMD: drop nestease.temp
+2018-01-26T20:04:24.613+0800 I COMMAND  [conn26] dropDatabase nestease starting
+2018-01-26T20:04:24.613+0800 I COMMAND  [conn26] dropDatabase nestease finished
+2018-01-26T20:04:32.413+0800 I COMMAND  [conn26] insert netease.temp appName: "Robomongo" ninserted:1 keysInserted:1 numYields:0 locks:{ Global: { acquireCount: { r: 3, w: 3 } }, Database: { acquireCount: { w: 2, W: 1 } }, Collection: { acquireCount: { w: 2 } } } 112ms
+2018-01-26T20:04:32.414+0800 I COMMAND  [conn26] CMD: drop netease.temp
+2018-01-26T20:04:46.805+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52182 #28 (19 connections now open)
+2018-01-26T20:04:46.806+0800 I NETWORK  [conn28] received client metadata from 127.0.0.1:52182 conn28: { application: { name: "Robomongo" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2018-01-26T20:04:46.846+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52183 #29 (20 connections now open)
+2018-01-26T20:04:46.846+0800 I NETWORK  [conn29] received client metadata from 127.0.0.1:52183 conn29: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2018-01-26T20:04:56.873+0800 I -        [conn26] end connection 127.0.0.1:52172 (20 connections now open)
+2018-01-26T20:04:56.874+0800 I -        [conn27] end connection 127.0.0.1:52173 (19 connections now open)
+2018-01-26T20:05:00.747+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52185 #30 (19 connections now open)
+2018-01-26T20:05:00.758+0800 I NETWORK  [conn30] received client metadata from 127.0.0.1:52185 conn30: { application: { name: "Robomongo" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2018-01-26T20:05:00.796+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52186 #31 (20 connections now open)
+2018-01-26T20:05:00.807+0800 I NETWORK  [conn31] received client metadata from 127.0.0.1:52186 conn31: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2018-01-26T20:05:09.686+0800 I COMMAND  [conn30] insert netease.temp appName: "Robomongo" ninserted:1 keysInserted:1 numYields:0 locks:{ Global: { acquireCount: { r: 3, w: 3 } }, Database: { acquireCount: { w: 2, W: 1 } }, Collection: { acquireCount: { w: 2 } } } 127ms
+2018-01-26T20:05:09.688+0800 I COMMAND  [conn30] CMD: drop netease.temp
+2018-01-26T20:07:05.957+0800 I -        [conn8] end connection 127.0.0.1:50429 (20 connections now open)
+2018-01-26T20:07:05.959+0800 I -        [conn9] end connection 127.0.0.1:50430 (19 connections now open)
+2018-01-26T20:07:06.508+0800 I -        [conn10] end connection 127.0.0.1:52126 (18 connections now open)
+2018-01-26T20:07:06.510+0800 I -        [conn11] end connection 127.0.0.1:52127 (17 connections now open)
+2018-01-26T20:07:07.724+0800 I -        [conn12] end connection 127.0.0.1:52138 (16 connections now open)
+2018-01-26T20:07:07.725+0800 I -        [conn13] end connection 127.0.0.1:52139 (15 connections now open)
+2018-01-26T20:07:08.691+0800 I -        [conn14] end connection 127.0.0.1:52142 (14 connections now open)
+2018-01-26T20:07:08.693+0800 I -        [conn15] end connection 127.0.0.1:52143 (13 connections now open)
+2018-01-26T20:07:09.826+0800 I -        [conn16] end connection 127.0.0.1:52146 (12 connections now open)
+2018-01-26T20:07:09.827+0800 I -        [conn17] end connection 127.0.0.1:52147 (11 connections now open)
+2018-01-26T20:07:12.013+0800 I -        [conn18] end connection 127.0.0.1:52150 (10 connections now open)
+2018-01-26T20:07:12.015+0800 I -        [conn19] end connection 127.0.0.1:52151 (9 connections now open)
+2018-01-26T20:07:13.539+0800 I -        [conn20] end connection 127.0.0.1:52153 (8 connections now open)
+2018-01-26T20:07:13.540+0800 I -        [conn21] end connection 127.0.0.1:52154 (7 connections now open)
+2018-01-26T20:07:14.963+0800 I -        [conn24] end connection 127.0.0.1:52167 (6 connections now open)
+2018-01-26T20:07:14.964+0800 I -        [conn25] end connection 127.0.0.1:52168 (5 connections now open)
+2018-01-26T20:07:16.377+0800 I -        [conn28] end connection 127.0.0.1:52182 (4 connections now open)
+2018-01-26T20:07:16.379+0800 I -        [conn29] end connection 127.0.0.1:52183 (3 connections now open)
+2018-01-26T20:07:23.042+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52264 #32 (3 connections now open)
+2018-01-26T20:07:23.053+0800 I NETWORK  [conn32] received client metadata from 127.0.0.1:52264 conn32: { application: { name: "Robomongo" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2018-01-26T20:07:23.098+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52265 #33 (4 connections now open)
+2018-01-26T20:07:23.108+0800 I NETWORK  [conn33] received client metadata from 127.0.0.1:52265 conn33: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2018-01-26T20:07:26.252+0800 I COMMAND  [conn33] repairDatabase netease
+2018-01-26T20:07:26.252+0800 I STORAGE  [conn33] repairDatabase netease
+2018-01-26T20:08:41.293+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52274 #34 (5 connections now open)
+2018-01-26T20:08:41.304+0800 I NETWORK  [conn34] received client metadata from 127.0.0.1:52274 conn34: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.11-rc0-2-g87ad912" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2018-01-26T20:09:44.954+0800 I -        [conn30] end connection 127.0.0.1:52185 (5 connections now open)
+2018-01-26T20:09:44.955+0800 I -        [conn31] end connection 127.0.0.1:52186 (4 connections now open)
+2018-01-26T20:09:47.187+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52284 #35 (4 connections now open)
+2018-01-26T20:09:47.188+0800 I NETWORK  [conn35] received client metadata from 127.0.0.1:52284 conn35: { application: { name: "Robomongo" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2018-01-26T20:09:47.228+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52285 #36 (5 connections now open)
+2018-01-26T20:09:47.238+0800 I NETWORK  [conn36] received client metadata from 127.0.0.1:52285 conn36: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2018-01-26T20:13:04.267+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52574 #37 (6 connections now open)
+2018-01-26T20:13:04.268+0800 I NETWORK  [conn37] received client metadata from 127.0.0.1:52574 conn37: { application: { name: "Robomongo" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2018-01-26T20:13:04.309+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52575 #38 (7 connections now open)
+2018-01-26T20:13:04.319+0800 I NETWORK  [conn38] received client metadata from 127.0.0.1:52575 conn38: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2018-01-26T20:13:22.449+0800 I -        [conn35] end connection 127.0.0.1:52284 (7 connections now open)
+2018-01-26T20:13:22.450+0800 I -        [conn36] end connection 127.0.0.1:52285 (6 connections now open)
+2018-01-26T20:13:26.319+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52578 #39 (6 connections now open)
+2018-01-26T20:13:26.319+0800 I NETWORK  [conn39] received client metadata from 127.0.0.1:52578 conn39: { application: { name: "Robomongo" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2018-01-26T20:13:26.353+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52579 #40 (7 connections now open)
+2018-01-26T20:13:26.363+0800 I NETWORK  [conn40] received client metadata from 127.0.0.1:52579 conn40: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2018-01-26T20:14:16.978+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52732 #41 (8 connections now open)
+2018-01-26T20:14:16.990+0800 I NETWORK  [conn41] received client metadata from 127.0.0.1:52732 conn41: { application: { name: "Robomongo" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2018-01-26T20:14:17.028+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52733 #42 (9 connections now open)
+2018-01-26T20:14:17.038+0800 I NETWORK  [conn42] received client metadata from 127.0.0.1:52733 conn42: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2018-01-26T20:15:39.770+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52873 #43 (10 connections now open)
+2018-01-26T20:15:39.781+0800 I NETWORK  [conn43] received client metadata from 127.0.0.1:52873 conn43: { application: { name: "Robomongo" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2018-01-26T20:15:39.817+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52874 #44 (11 connections now open)
+2018-01-26T20:15:39.827+0800 I NETWORK  [conn44] received client metadata from 127.0.0.1:52874 conn44: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2018-01-26T20:22:33.613+0800 I COMMAND  [conn39] insert netease.temp appName: "Robomongo" ninserted:1 keysInserted:1 numYields:0 locks:{ Global: { acquireCount: { r: 3, w: 3 } }, Database: { acquireCount: { w: 2, W: 1 } }, Collection: { acquireCount: { w: 2 } } } 116ms
+2018-01-26T20:22:33.615+0800 I COMMAND  [conn39] CMD: drop netease.temp
+2018-01-26T20:22:43.364+0800 I COMMAND  [conn39] command netease.users appName: "Robomongo" command: create { create: "users" } numYields:0 reslen:22 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { W: 1 } } } protocol:op_command 139ms
+2018-01-26T20:22:46.628+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52995 #45 (12 connections now open)
+2018-01-26T20:22:46.629+0800 I NETWORK  [conn45] received client metadata from 127.0.0.1:52995 conn45: { application: { name: "Robomongo" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2018-01-26T20:22:46.674+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52996 #46 (13 connections now open)
+2018-01-26T20:22:46.674+0800 I NETWORK  [conn46] received client metadata from 127.0.0.1:52996 conn46: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2018-01-26T20:42:04.411+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53666 #47 (14 connections now open)
+2018-01-26T20:42:04.420+0800 I NETWORK  [conn47] received client metadata from 127.0.0.1:53666 conn47: { driver: { name: "nodejs", version: "3.0.1" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "6.1.7601" }, platform: "Node.js v8.9.3, LE, mongodb-core: 3.0.1" }
+2018-01-26T20:42:11.468+0800 I -        [conn47] end connection 127.0.0.1:53666 (14 connections now open)
+2018-01-26T20:45:25.972+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53711 #48 (14 connections now open)
+2018-01-26T20:45:25.982+0800 I NETWORK  [conn48] received client metadata from 127.0.0.1:53711 conn48: { driver: { name: "nodejs", version: "3.0.1" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "6.1.7601" }, platform: "Node.js v8.9.3, LE, mongodb-core: 3.0.1" }
+2018-01-26T20:45:27.005+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53713 #49 (15 connections now open)
+2018-01-26T20:45:27.082+0800 I INDEX    [conn48] build index on: netease.users properties: { v: 2, unique: true, key: { uid: 1 }, name: "uid_1", ns: "netease.users", background: true }
+2018-01-26T20:45:27.083+0800 I INDEX    [conn48] build index done.  scanned 1 total records. 0 secs
+2018-01-26T21:26:22.320+0800 I -        [conn48] end connection 127.0.0.1:53711 (15 connections now open)
+2018-01-26T21:26:22.320+0800 I -        [conn49] end connection 127.0.0.1:53713 (14 connections now open)
+2018-01-26T21:26:25.494+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54245 #50 (14 connections now open)
+2018-01-26T21:26:25.503+0800 I NETWORK  [conn50] received client metadata from 127.0.0.1:54245 conn50: { driver: { name: "nodejs", version: "3.0.1" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "6.1.7601" }, platform: "Node.js v8.9.3, LE, mongodb-core: 3.0.1" }
+2018-01-26T21:26:26.536+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54247 #51 (15 connections now open)
+2018-01-26T21:30:31.654+0800 I -        [conn50] end connection 127.0.0.1:54245 (15 connections now open)
+2018-01-26T21:30:31.654+0800 I -        [conn51] end connection 127.0.0.1:54247 (15 connections now open)
+2018-01-26T21:30:34.225+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54312 #52 (14 connections now open)
+2018-01-26T21:30:34.236+0800 I NETWORK  [conn52] received client metadata from 127.0.0.1:54312 conn52: { driver: { name: "nodejs", version: "3.0.1" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "6.1.7601" }, platform: "Node.js v8.9.3, LE, mongodb-core: 3.0.1" }
+2018-01-26T21:30:35.281+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54314 #53 (15 connections now open)
+2018-01-26T21:30:37.756+0800 I -        [conn52] end connection 127.0.0.1:54312 (15 connections now open)
+2018-01-26T21:30:37.756+0800 I -        [conn53] end connection 127.0.0.1:54314 (14 connections now open)
+2018-01-26T21:30:59.450+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54319 #54 (14 connections now open)
+2018-01-26T21:30:59.451+0800 I NETWORK  [conn54] received client metadata from 127.0.0.1:54319 conn54: { application: { name: "Robomongo" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2018-01-26T21:30:59.494+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54320 #55 (15 connections now open)
+2018-01-26T21:30:59.494+0800 I NETWORK  [conn55] received client metadata from 127.0.0.1:54320 conn55: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2018-01-26T21:32:30.439+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54343 #56 (16 connections now open)
+2018-01-26T21:32:30.448+0800 I NETWORK  [conn56] received client metadata from 127.0.0.1:54343 conn56: { driver: { name: "nodejs", version: "3.0.1" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "6.1.7601" }, platform: "Node.js v8.9.3, LE, mongodb-core: 3.0.1" }
+2018-01-26T21:32:35.460+0800 I -        [conn56] end connection 127.0.0.1:54343 (16 connections now open)
+2018-01-26T21:36:42.076+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54395 #57 (16 connections now open)
+2018-01-26T21:36:42.087+0800 I NETWORK  [conn57] received client metadata from 127.0.0.1:54395 conn57: { driver: { name: "nodejs", version: "3.0.1" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "6.1.7601" }, platform: "Node.js v8.9.3, LE, mongodb-core: 3.0.1" }
+2018-01-26T21:36:43.118+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:54398 #58 (17 connections now open)
+2018-01-26T21:36:44.477+0800 I -        [conn57] end connection 127.0.0.1:54395 (17 connections now open)
+2018-01-26T21:36:44.477+0800 I -        [conn58] end connection 127.0.0.1:54398 (16 connections now open)
+2018-01-26T21:54:49.133+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55096 #59 (16 connections now open)
+2018-01-26T21:54:49.142+0800 I NETWORK  [conn59] received client metadata from 127.0.0.1:55096 conn59: { driver: { name: "nodejs", version: "3.0.1" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "6.1.7601" }, platform: "Node.js v8.9.3, LE, mongodb-core: 3.0.1" }
+2018-01-26T22:00:01.126+0800 I -        [conn59] end connection 127.0.0.1:55096 (16 connections now open)
+2018-01-26T22:00:03.512+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55270 #60 (16 connections now open)
+2018-01-26T22:00:03.518+0800 I NETWORK  [conn60] received client metadata from 127.0.0.1:55270 conn60: { driver: { name: "nodejs", version: "3.0.1" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "6.1.7601" }, platform: "Node.js v8.9.3, LE, mongodb-core: 3.0.1" }
+2018-01-26T22:01:38.300+0800 I -        [conn60] end connection 127.0.0.1:55270 (16 connections now open)
+2018-01-26T22:01:40.218+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55327 #61 (16 connections now open)
+2018-01-26T22:01:40.225+0800 I NETWORK  [conn61] received client metadata from 127.0.0.1:55327 conn61: { driver: { name: "nodejs", version: "3.0.1" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "6.1.7601" }, platform: "Node.js v8.9.3, LE, mongodb-core: 3.0.1" }
+2018-01-26T22:02:01.653+0800 I -        [conn61] end connection 127.0.0.1:55327 (16 connections now open)
+2018-01-26T22:02:05.090+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55355 #62 (16 connections now open)
+2018-01-26T22:02:05.096+0800 I NETWORK  [conn62] received client metadata from 127.0.0.1:55355 conn62: { driver: { name: "nodejs", version: "3.0.1" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "6.1.7601" }, platform: "Node.js v8.9.3, LE, mongodb-core: 3.0.1" }
+2018-01-26T22:03:37.245+0800 I -        [conn62] end connection 127.0.0.1:55355 (16 connections now open)
+2018-01-26T22:03:39.771+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55417 #63 (16 connections now open)
+2018-01-26T22:03:39.776+0800 I NETWORK  [conn63] received client metadata from 127.0.0.1:55417 conn63: { driver: { name: "nodejs", version: "3.0.1" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "6.1.7601" }, platform: "Node.js v8.9.3, LE, mongodb-core: 3.0.1" }
+2018-01-26T22:03:40.788+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55419 #64 (17 connections now open)
+2018-01-26T22:03:40.867+0800 I -        [conn63] end connection 127.0.0.1:55417 (17 connections now open)
+2018-01-26T22:03:40.867+0800 I -        [conn64] end connection 127.0.0.1:55419 (16 connections now open)
+2018-01-26T22:03:54.299+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55475 #65 (16 connections now open)
+2018-01-26T22:03:54.304+0800 I NETWORK  [conn65] received client metadata from 127.0.0.1:55475 conn65: { driver: { name: "nodejs", version: "3.0.1" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "6.1.7601" }, platform: "Node.js v8.9.3, LE, mongodb-core: 3.0.1" }
+2018-01-26T22:05:13.597+0800 I -        [conn65] end connection 127.0.0.1:55475 (16 connections now open)
+2018-01-26T22:05:23.631+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55530 #66 (16 connections now open)
+2018-01-26T22:05:23.638+0800 I NETWORK  [conn66] received client metadata from 127.0.0.1:55530 conn66: { driver: { name: "nodejs", version: "3.0.1" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "6.1.7601" }, platform: "Node.js v8.9.3, LE, mongodb-core: 3.0.1" }
+2018-01-26T22:05:33.394+0800 I -        [conn66] end connection 127.0.0.1:55530 (16 connections now open)
+2018-01-27T08:53:48.952+0800 I -        [conn34] end connection 127.0.0.1:52274 (15 connections now open)
+2018-01-27T08:53:49.772+0800 I -        [conn40] end connection 127.0.0.1:52579 (14 connections now open)
+2018-01-27T08:53:49.772+0800 I -        [conn43] end connection 127.0.0.1:52873 (14 connections now open)
+2018-01-27T08:53:49.772+0800 I -        [conn39] end connection 127.0.0.1:52578 (14 connections now open)
+2018-01-27T08:53:49.772+0800 I -        [conn41] end connection 127.0.0.1:52732 (11 connections now open)
+2018-01-27T08:53:49.772+0800 I -        [conn38] end connection 127.0.0.1:52575 (10 connections now open)
+2018-01-27T08:53:49.772+0800 I -        [conn45] end connection 127.0.0.1:52995 (9 connections now open)
+2018-01-27T08:53:49.772+0800 I -        [conn44] end connection 127.0.0.1:52874 (8 connections now open)
+2018-01-27T08:53:49.772+0800 I -        [conn55] end connection 127.0.0.1:54320 (8 connections now open)
+2018-01-27T08:53:49.772+0800 I -        [conn54] end connection 127.0.0.1:54319 (6 connections now open)
+2018-01-27T08:53:49.772+0800 I -        [conn46] end connection 127.0.0.1:52996 (5 connections now open)
+2018-01-27T08:53:49.772+0800 I -        [conn32] end connection 127.0.0.1:52264 (5 connections now open)
+2018-01-27T08:53:49.772+0800 I -        [conn37] end connection 127.0.0.1:52574 (5 connections now open)
+2018-01-27T08:53:49.772+0800 I -        [conn33] end connection 127.0.0.1:52265 (3 connections now open)
+2018-01-27T08:53:49.773+0800 I -        [conn42] end connection 127.0.0.1:52733 (1 connection now open)
+2018-01-27T08:54:03.362+0800 I CONTROL  [serviceShutdown] got SERVICE_CONTROL_PRESHUTDOWN request from Windows Service Control Manager, will terminate after current cmd ends
+2018-01-27T08:54:03.362+0800 I NETWORK  [serviceShutdown] shutdown: going to close listening sockets...
+2018-01-27T08:54:03.362+0800 I NETWORK  [serviceShutdown] closing listening socket: 480
+2018-01-27T08:54:03.362+0800 I NETWORK  [serviceShutdown] shutdown: going to flush diaglog...
+2018-01-27T08:54:03.362+0800 I FTDC     [serviceShutdown] Shutting down full-time diagnostic data capture
+2018-01-27T08:54:03.365+0800 I STORAGE  [serviceShutdown] WiredTigerKVEngine shutting down
+2018-01-27T08:54:03.843+0800 I STORAGE  [serviceShutdown] shutdown: removing fs lock...
+2018-01-27T08:54:03.846+0800 I CONTROL  [serviceShutdown] now exiting

@@ -1,0 +1,49 @@
+<aside class="learn">
+  <header>
+    <!--<h3>欢迎老铁!</h3>-->
+    <ul class="user-info">
+      <% if (locals.username) { %>
+      <li class="left">
+        <h3>欢迎<%= username %>！</h3>
+      </li>
+      <li class="right">
+        <a href="/logout">安全退出</a>
+      </li>
+      <% } %>
+    </ul>
+  </header>
+  <hr>
+  <h4>方法介绍</h4>
+  <ul>
+    <li>后端：<a href="http://nodejs.cn/">Nodejs</a></li>
+    <li>数据库：<a href="https://www.mongodb.com/">Mongodb</a></li>
+    <li>JS库：<a href="http://nej.netease.com/">NEJ</a></li>
+    <li>前端框架：<a href="http://regularjs.github.io">Regular</a></li>
+  </ul>
+  <hr>
+  <footer>
+    <em>如果你有其他建议或者想法，可以通过邮箱（hujingdada@126.com）联系我！</em>
+  </footer>
+  <hr>
+</aside>
+
+<!--<div class="navbar navbar-default navbar-static-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">         
+      <a class="navbar-brand" href="/">欢迎老铁！</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <% if (locals.username) { %> 
+          <li>
+            <a href="#">        
+                <%= username %>          
+            </a>
+          </li>
+          <li><a href="/logout">安全退出</a></li> 
+        <% } %>           
+      </ul>
+    </div>              
+  </div>
+</div>-->
+

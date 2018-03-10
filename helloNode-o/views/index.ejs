@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Todos</title>
+      <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+  </head>
+  <body class="learn-bar">
+      <% include header %>
+      <% if (locals.username) { %>
+        <input type="hidden" id="nameinput" value="<%= username %>">
+      <% } %>
+      <input type="hidden" id="listValue" value="<%= todolist %>">
+      <input type="hidden" id="todoid">
+      <section id="todoapp"></section>
+      <footer id="info">
+          <p>回车可生效待办事项</p>
+          <p>双击可编辑待办事项</p>
+          <p>Created by @HuDada</p>
+          <p>Part of<a href="http://todomvc.com">TodoMVC</a></p>
+      </footer>
+      <% include rtodos %>
+</body>
+<script src="/javascripts/regular/dist/regular.min.js"></script>
+<script src="/javascripts/jquery/jquery-3.2.1.js"></script>
+<script src="/javascripts/nej/src/define.js?pro=/javascripts"></script>
+<script src="/javascripts/index.js" type="text/javascript"></script>
+</html>
